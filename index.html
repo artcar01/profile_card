@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: -300px -600px, 600px 300px;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+      color: hsl(227, 10%, 46%);
+      line-height: 10px;
+      padding-top: 60px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      body {
+        background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: -750px -650px, 160px 180px;
+        background-color: hsl(185, 75%, 39%);
+        font-family: 'Kumbh Sans', sans-serif;
+        color: hsl(227, 10%, 46%);
+        line-height: 10px;
+        padding-top: 60px;
+        }
+      }
+
+    h2 {
+      font-weight: lighter;
+    }
+
+    h3, b {
+      color: hsl(229, 23%, 23%);
+    }
+
+    hr {
+      color:  hsl(0, 0%, 59%);
+      margin-top: 15px;
+    }
+
+    .profile-card {
+      width: 350px;
+      height: 350px;
+      background-color: white;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border-radius: 15px;
+    }
+
+    .photo-box {
+      background-image: url("images/bg-pattern-card.svg");
+      position: absolute;
+      width: 350px;
+      height: 125px;
+      margin-top: -20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .profile-pic {
+      width: 110px;
+      position: absolute;
+      margin-left: 120px;
+      margin-right: 120px;
+      margin-top: 65px;
+      border-radius: 65px;
+      border: 5px solid white ;
+    }
+
+    .info-box {
+      padding-top: 175px;
+    }
+
+    .personal-info {
+      text-align: center;
+    }
+
+    .row {
+      padding: 5px;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+    } 
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="photo-box">
+      <img class="profile-pic" src="images/image-victor.jpg" alt="profile-pic">
+    </div>
+    <div class="info-box">
+      <div class="personal-info">
+        <h2><b>Victor Crest</b> 26</h2>
+        <p>London</p>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <h3>80K</h3>
+          <p><small>Followers</small></p>
+        </div>
+        <div class="column">
+          <h3>803K</h3>
+          <p><small>Likes</small></p>
+        </div>
+        <div class="column">
+          <h3>1.4K</h3>
+          <p><small>Photos</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/art_art87">Art Carida</a>.
+  </div>
+</body>
+</html>
